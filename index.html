@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate link distance</title>
+    <!-- <link rel = "stylesheet" href = "work1.css"/> -->
+</head>
+<body>
+    <form>
+        <table>
+            <caption>
+            <h2>calculate link distance</h2>
+            </caption>
+            <tr>
+                <td>Enter the co-ordintes of A:</td>
+                <td>
+                    <input
+                    type = "text" name = "lat1long1" id = "lat1" placeholder="Latitude A,longitude A" />degree
+                </td>
+            </tr>
+            <tr>
+                <td>Enter the co-ordinates of B:</td>
+                <td>
+                    <input type = "text" name = "lat2long2" id = "lat2" placeholder="Latitude B,longitude B" />degree
+
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Frequency:</td>s
+                <td><select 
+                    name = "frequency"
+                    id = "channel frequency"
+                    onChange="calculate()">
+                    <option value = "hidden">frequency</option>
+                    <option value = "2.4 GHZ">2.4</option>
+                    <option value = "5.1GHZ">5.1</option>
+                </td>
+            </tr>
+            <tr>
+                  <td>Link Distance:</td>
+                  <td><input type="text" id="linkDistance" onchange="fresnelRadius()"></td>
+              </tr>
+              <tr>
+               
+               
+                <tr>
+                    <td>Fresnel Radius(in m):</td>
+                      <td><input type="text" id="fresnelRadius" />metre</td>
+                    </td>
+                  </tr>
+                
+    </table>
+    </form>
+    <script src = "fresnelradius.js"></script>
+    
+</body>
+
+</html>
